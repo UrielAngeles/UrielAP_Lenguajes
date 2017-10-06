@@ -29,6 +29,10 @@ public class Aplicacion extends javax.swing.JFrame {
 
         botoncito = new javax.swing.JButton();
         etiqueta = new javax.swing.JLabel();
+        TextoPeso = new javax.swing.JTextField();
+        TextoAltura = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,25 +45,53 @@ public class Aplicacion extends javax.swing.JFrame {
 
         etiqueta.setText("Resultado");
 
+        TextoPeso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TextoPesoActionPerformed(evt);
+            }
+        });
+
+        jLabel1.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel1.setText("Peso");
+
+        jLabel2.setText("Altura");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addComponent(etiqueta)
-                .addGap(33, 33, 33)
-                .addComponent(botoncito)
-                .addContainerGap(190, Short.MAX_VALUE))
+                .addGap(71, 71, 71)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(etiqueta)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))
+                        .addGap(34, 34, 34)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(botoncito)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(TextoPeso, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                                .addComponent(TextoAltura)))))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(33, 33, 33)
+                .addGap(27, 27, 27)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TextoPeso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TextoAltura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
+                .addGap(18, 18, 18)
                 .addComponent(botoncito)
-                .addGap(32, 32, 32)
+                .addGap(18, 18, 18)
                 .addComponent(etiqueta, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
 
         pack();
@@ -78,6 +110,10 @@ public class Aplicacion extends javax.swing.JFrame {
             modelo.calcular();
             etiqueta.setText(modelo.calcular());
     }//GEN-LAST:event_botoncitoActionPerformed
+
+    private void TextoPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextoPesoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TextoPesoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,7 +151,11 @@ public class Aplicacion extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField TextoAltura;
+    private javax.swing.JTextField TextoPeso;
     private javax.swing.JButton botoncito;
     private javax.swing.JLabel etiqueta;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
