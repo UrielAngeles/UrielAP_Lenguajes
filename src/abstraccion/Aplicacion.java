@@ -102,8 +102,11 @@ public class Aplicacion extends javax.swing.JFrame {
            Usuario uriel=new Usuario();
            //uriel.peso=-93;                      
            //uriel.altura=1.70f;
-           uriel.setPeso(93);
-           uriel.setAltura(1.70f);
+           //Primero pedimos el valor del texto al prmer campo
+           float peso=Float.parseFloat(TextoPeso.getText());
+           uriel.setPeso(peso);
+            float altura=Float.parseFloat(TextoAltura.getText());
+           uriel.setAltura(altura);
            
            Imc modelo=new Imc();
            modelo.u=uriel;
