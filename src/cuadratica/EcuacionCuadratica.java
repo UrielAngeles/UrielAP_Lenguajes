@@ -9,6 +9,13 @@ package cuadratica;
  *
  * @author Uriel Angeles
  */
+
+//Generar un paquete que se llame cuadratica, en el crear una interfaz de usuario
+//que se llame aplicacion (jframe)
+//Debe resolver las raices de una raiz cuadratica 
+//si las raices son imaginarios debe indicarlo
+//generar un modelo como la clase imc
+
 public class EcuacionCuadratica {
     
     private float a;
