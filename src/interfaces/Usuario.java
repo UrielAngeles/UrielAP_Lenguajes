@@ -7,11 +7,13 @@ package interfaces;
 
 /**
  *
- * @author Uriel Angeles
+ * @author Uridrack7
  */
-public interface Direccion {
-    public int x=2;
-       //un metodo
-            public void generarDireccion();
-       //Pongamos un constructor
+public class Usuario implements Direccion{       //Heredara la interfaz
+
+    @Override
+    public void generarDireccion() {        //Interface del usuario
+      
+    }
+    
 }

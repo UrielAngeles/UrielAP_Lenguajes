@@ -3,27 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package constructores;
+package colecciones;
 
 /**
  *
- * @author Uriel Angeles
+ * @author Uridrack7
  */
-public class Animal {
+public class Usuario {
+    
     private String nombre;
     private int edad;
-    private boolean muerde;
-    
-    public Animal(int edad){
-        this.edad=edad;
-    }
-    
-    //este es el constructor por defecto
-    public Animal(){
-        System.out.println("Estoy en el constructor");
-        edad=5;
-        nombre="Terry";
-    }
+    private String email;
 
     public String getNombre() {
         return nombre;
@@ -41,11 +31,12 @@ public class Animal {
         this.edad = edad;
     }
 
-    public boolean isMuerde() {
-        return muerde;
+    public String getEmail() {
+        return email;
     }
 
-    public void setMuerde(boolean muerde) {
-        this.muerde = muerde;
+    public void setEmail(String email) {
+        this.email = email;
     }
+    
 }

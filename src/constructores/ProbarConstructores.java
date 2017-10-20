@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 public class ProbarConstructores {
         public static void main(String[] args){
                 
-                //Creampos un objeto de la clase Animal
+                //Creamos un objeto de la clase Animal
                 Animal algo= new Animal();
                 int x=10;
                 algo.setEdad(7);

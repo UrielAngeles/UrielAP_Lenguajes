@@ -7,11 +7,12 @@ package interfaces;
 
 /**
  *
- * @author Uriel Angeles
+ * @author Uridrack7
  */
-public interface Direccion {
-    public int x=2;
-       //un metodo
-            public void generarDireccion();
-       //Pongamos un constructor
+public class ProbarInterfaces {
+    public static void main(String[] args) {
+        //Se prueba que no se pueden crear objetos
+        //Direccion d=new Direccion();
+        Direccion d;
+    }
 }

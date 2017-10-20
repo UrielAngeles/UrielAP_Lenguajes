@@ -13,6 +13,15 @@ public class Usuario {
 private float peso;
 private float altura;
 
+public Usuario(float peso, float altura){   //creacion de constructor por defecto
+    this.peso=peso;
+    this.altura=altura;
+}
+    public Usuario(){       //creacion del segundo constructor
+        this.peso=93;
+        this.altura=1.70f;
+    }
+
     public float getPeso() {
         return peso;
     }
