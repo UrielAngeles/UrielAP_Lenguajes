@@ -13,8 +13,9 @@ public class Opcion {
     private String titulo;
     private boolean corecta;
 
-    Opcion(String moscu, boolean b) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Opcion(String titulo, boolean corecta) {
+        this.titulo = titulo;
+        this.corecta = corecta;
     }
 
     public String getTitulo() {
