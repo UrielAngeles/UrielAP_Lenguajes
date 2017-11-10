@@ -16,7 +16,8 @@ public class Cliente {
     private String email;
     private Direccion direccion;
     
-    public Cliente(String nombre, int edad, String email, Direccion direccion) {    //constructor que inicializa los atributos
+    //constructor que inicializa los atributos
+    public Cliente(String nombre, int edad, String email, Direccion direccion) {
     this.nombre = nombre;
     this.edad = edad;
     this.email = email;

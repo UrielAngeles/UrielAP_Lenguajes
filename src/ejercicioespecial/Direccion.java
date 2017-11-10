@@ -16,7 +16,8 @@ public class Direccion {
     private long cp;
     private String municipio;
     
-    public Direccion(String calle, String colonia, long cp, String municipio) { //constructor que inicializa los atributos
+    //constructor que inicializa los atributos
+    public Direccion(String calle, String colonia, long cp, String municipio) { 
     this.calle = calle;
     this.colonia = colonia;
     this.cp = cp;

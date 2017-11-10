@@ -15,8 +15,6 @@ public class ProbarClientes {
         
         for(Cliente c:cliente.generarClientes()){
           System.out.println(" Nombre: "+c.getNombre()+" Edad: "+c.getEdad()+" Email: "+c.getEmail()+" Direccion: \n"+c.getDireccion().getCalle()+" "+c.getDireccion().getColonia()+" "+c.getDireccion().getCp()+" "+c.getDireccion().getMunicipio());
-          System.out.println(" Nombre: "+c.getNombre()+" Edad: "+c.getEdad()+" Email: "+c.getEmail()+" Direccion: \n"+c.getDireccion().getCalle()+" "+c.getDireccion().getColonia()+" "+c.getDireccion().getCp()+" "+c.getDireccion().getMunicipio());
-          System.out.println(" Nombre: "+c.getNombre()+" Edad: "+c.getEdad()+" Email: "+c.getEmail()+" Direccion: \n"+c.getDireccion().getCalle()+" "+c.getDireccion().getColonia()+" "+c.getDireccion().getCp()+" "+c.getDireccion().getMunicipio());    
-        }
+          }
     }
 }
