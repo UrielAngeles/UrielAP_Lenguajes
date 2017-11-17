@@ -103,15 +103,20 @@ public class Aplicacion extends javax.swing.JFrame {
            //uriel.peso=-93;                      
            //uriel.altura=1.70f;
            //Primero pedimos el valor del texto al prmer campo
+           try{
            float peso=Float.parseFloat(TextoPeso.getText());
            uriel.setPeso(peso);
+           Validaciones.validarNumeroNoNegativo(peso);
             float altura=Float.parseFloat(TextoAltura.getText());
            uriel.setAltura(altura);
-           
+           Validaciones.validarNumeroNoNegativo(altura);
            Imc modelo=new Imc();
            modelo.u=uriel;
             modelo.calcular();
             etiqueta.setText(modelo.calcular());
+           }catch(Exception e){
+               etiqueta.setText(e.getMessage());
+           }
     }//GEN-LAST:event_botoncitoActionPerformed
 
     private void TextoPesoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TextoPesoActionPerformed
