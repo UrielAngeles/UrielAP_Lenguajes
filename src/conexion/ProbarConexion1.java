@@ -13,7 +13,7 @@ import java.util.logging.Level;
  *
  * @author Uridrack7
  */
-public class ProbarConexion {
+public class ProbarConexion1 {
        public static void main(String[] args) {
         Connection con=null ;
         try{
@@ -21,25 +21,11 @@ public class ProbarConexion {
             System.out.println("Te Conectaste");
             //AQUI VIENE QUERIES DE MYSQL
             System.out.println("Te conectaste muy bien");
-            //CON LA CONEXION QUE SE LLAMA CON VAMOS A GENERAR UNA SENTENCIA, LA CUAL ES UNA CLASE
-            //Statement st=con.createStatement(); //Invoca una sentencia sql
-            
-            //GENERAMOS LA TABLITA
-            
-            //st.execute("create table tablita(id integer primary key,nombre varchar(40))");
-            
-            //Caso1:INSERT
-            PreparedStatement st=con.prepareStatement("insert into tablita values(?,?)");
-                st.setInt(1, 1);
-                st.setString(2, "Uriel");
-                st.execute();
-                st.close();
-                System.out.println("Registro Insertado");
-            //SE CIERRAN LAS SENTENCIAS AL IGUAL QUE LAS CONEXIONES
-            st.close();
-            //System.out.println("Tabla generada con exito");      
-            
-            
+           //AQUI SE VIENE QUERY DE MYSQL
+           //CASO SELECT
+           //PASO 1: GENERAR QUERY
+           Statement st= con.createStatement();
+           ResultSet rs= st.executeQuery("select * from tablita");
             
         }catch(ClassNotFoundException e){
             System.out.println("No se cargo bien el driver");
